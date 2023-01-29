@@ -25,7 +25,3 @@ Edit `config/global.json` for changing config.
 ## Example
 
 [/guide/example](/docs/guide/example.md)
-
-```
-
-```
