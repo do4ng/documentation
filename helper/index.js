@@ -21,7 +21,9 @@ const result = {};
 
 async function main() {
   const highlighter = await getHighlighter({ theme: "material-palenight" });
+
   for await (const post of posts) {
+    console.log(`Parsing ${post}`);
     const parsed = await parseMarkdown(
       highlighter,
       fs.readFileSync(join(__dirname, "../docs/guide", post)).toString()

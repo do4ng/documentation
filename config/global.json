@@ -1,6 +1,6 @@
 {
   "github": "#repo-link",
   "name": "app-name",
-  "entry": "/guide/helloworld",
+  "entry": "/guide/usage",
   "description": "Hello World!"
 }

@@ -1,0 +1,9 @@
+[
+  {
+    "category": "Guide",
+    "posts": [
+      ["usage", "Usage"],
+      ["example", "Example"]
+    ]
+  }
+]

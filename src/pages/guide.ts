@@ -1,8 +1,10 @@
 import { createElement, html } from "../zitjs";
 
-import global from "../global.json";
-import posts from "./config.json";
+import global from "../../config/global.json";
+import posts from "../../config/config.json";
 import docs from "./posts.json";
+
+import { header } from "./index";
 
 const postList: string[] = [];
 const titleList: string[] = [];
@@ -28,8 +30,9 @@ const post = createElement(
 );
 
 const template = createElement(
-  { tagName: "div", attributes: { class: "container" } },
-  html`{{side}}${post()}`
+  { tag: undefined },
+  html`${header}
+    <div class="container">{{side}}${post()}</div>`
 );
 
 export default {
@@ -46,27 +49,28 @@ export default {
     const sideList = createElement(
       { tagName: "div", attributes: { class: "side-list" } },
       `
-    <div class="logo"><a href="/" class="no-a">${
-      global.name
-    } <span class="logo-docs">docs</span></a></div>
     ${posts
       .map(
-        (category) => html` <div class="category">
-          <div class="category-name">${category.category}</div>
-          <div class="category-content">
-            ${category.posts.map(
-              (post) => html` <div
-                class="category-post ${post[0] === params.slug ? "active" : ""}"
-              >
-                <a
-                  href="/guide/${post[0]}"
-                  class="${post[0] === params.slug ? "active" : ""}"
-                  >${post[1]}</a
+        (category) => html` <!-- side -->
+          <div class="category">
+            <div class="category-name">${category.category}</div>
+            <div class="category-content">
+              ${category.posts.map(
+                (post) => html` <div
+                  class="category-post ${post[0] === params.slug
+                    ? "active"
+                    : ""}"
                 >
-              </div>`
-            )}
-          </div>
-        </div>`
+                  <a
+                    href="/guide/${post[0]}"
+                    class="${post[0] === params.slug ? "active" : ""}"
+                    >${post[1]}</a
+                  >
+                </div>`
+              )}
+            </div>
+            <div class="footer"></div>
+          </div>`
       )
       .join("")}
     `

@@ -1,22 +1,23 @@
 import { html } from "../zitjs";
-import global from "../global.json";
+import global from "../../config/global.json";
+
+export const header = html` <div id="header">
+  <div id="header-container">
+    <div id="header-title"><a href="/">${global.name}</a></div>
+
+    <ul id="header-contents">
+      <li>
+        <a href="${global.entry}">Guide</a>
+      </li>
+      <li>
+        <a href="${global.github}">Github</a>
+      </li>
+    </ul>
+  </div>
+</div>`;
 
 export default html`
-  <div id="header">
-    <div id="header-container">
-      <div id="header-title">${global.name}</div>
-
-      <ul id="header-contents">
-        <li>
-          <a href="${global.entry}">Guide</a>
-        </li>
-        <li>
-          <a href="${global.github}">Github</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
+  ${header}
   <div id="main">
     <div id="title">
       <div class="flex-container">
