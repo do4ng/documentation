@@ -13,6 +13,6 @@ Write docs in `docs/guide` and regists them to `config/config.json`.
 
 Edit `config/global.json` for changing config.
 
-## Example
+## Examples
 
 [/guide/example](/guide/example)

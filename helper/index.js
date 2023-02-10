@@ -3,11 +3,16 @@ const fs = require("fs");
 const { join } = require("path");
 const { getHighlighter } = require("shiki");
 const markdown = require("markdown-it");
+const anchor = require("markdown-it-anchor");
 
 async function parseMarkdown(highlighter, raw) {
   const md = new markdown({
     html: true,
     highlight: (code, lang) => highlighter.codeToHtml(code, { lang }),
+  });
+
+  md.use(anchor.default, {
+    permalink: anchor.default.permalink.ariaHidden({ placement: "before" }),
   });
 
   return {

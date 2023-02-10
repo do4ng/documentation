@@ -264,6 +264,11 @@ linkify-it@^4.0.1:
   dependencies:
     uc.micro "^1.0.1"
 
+markdown-it-anchor@^8.6.6:
+  version "8.6.6"
+  resolved "https://registry.yarnpkg.com/markdown-it-anchor/-/markdown-it-anchor-8.6.6.tgz#4a12e358c9c2167ee28cb7a5f10e29d6f1ffd7ca"
+  integrity sha512-jRW30YGywD2ESXDc+l17AiritL0uVaSnWsb26f+68qaW9zgbIIr1f4v2Nsvc0+s0Z2N3uX6t/yAw7BwCQ1wMsA==
+
 markdown-it@^13.0.1:
   version "13.0.1"
   resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-13.0.1.tgz#c6ecc431cacf1a5da531423fc6a42807814af430"
@@ -404,9 +409,9 @@ vscode-textmate@^8.0.0:
   resolved "https://registry.yarnpkg.com/vscode-textmate/-/vscode-textmate-8.0.0.tgz#2c7a3b1163ef0441097e0b5d6389cd5504b59e5d"
   integrity sha512-AFbieoL7a5LMqcnOF04ji+rpXadgOXnZsxQr//r83kLPr7biP7am3g9zbaZIaBGwBRWeSvoMD4mgPdX3e4NWBg==
 
-zitjs@latest:
-  version "1.1.0-beta.0"
-  resolved "https://registry.yarnpkg.com/zitjs/-/zitjs-1.1.0-beta.0.tgz#7a412734ca31f9983723a462d7f80817847e1f2e"
-  integrity sha512-DN8AqgmdBOgbhG3sBDMKnGi9ZOe75LIA3kFIgjwbcfIYwL8ph2evFSt+QP1AR9LTJKjCWSfiOibFREpSdi9elg==
+zitjs@^1.1.0-beta.5:
+  version "1.1.0-beta.5"
+  resolved "https://registry.yarnpkg.com/zitjs/-/zitjs-1.1.0-beta.5.tgz#3228136f84c93082c320cc1d9b4bafa30f09690b"
+  integrity sha512-HHFl8XutD1AgsLadUmNPBNS5TxNwZ0B1oBZhX6ohTMWkG64HJyp4zoq7wD/Ccx4Ni+/TW6IiV/OKioF30pmgmQ==
   dependencies:
     path-to-regexp "^6.2.1"

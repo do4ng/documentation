@@ -2,5 +2,22 @@
   "github": "#repo-link",
   "name": "app-name",
   "entry": "/guide/usage",
-  "description": "Hello World!"
+  "description": "Hello World!",
+  "features": {
+    "1": {
+      "name": "Feature #1",
+      "des": "Hello World",
+      "example": "Example #1"
+    },
+    "2": {
+      "name": "Feature #2",
+      "des": "Ping Pong",
+      "example": "Example #2"
+    },
+    "3": {
+      "name": "Feature #3",
+      "des": "",
+      "example": "Example #3"
+    }
+  }
 }
