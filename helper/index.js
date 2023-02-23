@@ -14,6 +14,7 @@ async function parseMarkdown(highlighter, raw) {
   md.use(anchor.default, {
     permalink: anchor.default.permalink.ariaHidden({ placement: "before" }),
   });
+  md.use(require("markdown-it-header-sections"));
 
   return {
     html: md.render(raw),
@@ -22,7 +23,7 @@ async function parseMarkdown(highlighter, raw) {
 
 const posts = fs.readdirSync(join(__dirname, "../docs/guide"));
 
-const result = {};
+let result = {};
 
 async function main() {
   const highlighter = await getHighlighter({ theme: "material-palenight" });
