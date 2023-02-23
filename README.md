@@ -1,4 +1,4 @@
-# documentation
+# documentation 🛰️
 
 Documentation Template
 
