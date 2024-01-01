@@ -1,3 +1,6 @@
+> This project has been deprecated. Use https://github.com/do4ng/docs instead
+
+
 # documentation 🛰️
 
 Documentation Template
